@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  button {
+    cursor: pointer;
+  }
+  /*	.btn_3{
+		cursor: default;
+	}*/
+  
+  button[disabled] {
+    cursor: default;
+  }
+
+  .line{
+  	width: 100%;
+  	border:2px solid #000;
+  }
+
+
+  input[type='number']{
+  	color: red;
+  }
+  input[type='url']{
+  	color: blue;
+  }
+
+
+	.icon1{
+		width: 50px;
+		height: 50px;
+		background: url(./media/dog.jpg);
+	}
+	.icon2{
+		width: 50px;
+		height: 50px;
+		background: url(./media/pig.jpg);
+	}
+	.icon3{
+		width: 50px;
+		height: 50px;
+		background-color: #333;
+	}
+	.icon33{
+		width: 50px;
+		height: 50px;
+		background-color: #444;
+	}
+
+	div[class^='icon']{
+		width: 60px;
+	}
+	div[class$='icon3']{
+		width: 80px;
+	}
+
+	div[class*='3']{
+		width: 100px;
+	}
+
+  </style>
+</head>
+
+<body>
+
+  <button>1</button>
+  <button>2</button>
+  <button disabled="disabled" class="btn_3">3</button>
+  <button>4</button>
+
+
+
+
+
+	<div class="line"></div>
+  <div>
+  	number<input type="number">
+  </div>
+  <div>
+  	number<input type="number">
+  </div>
+  <div>
+  	url<input type="url">
+  </div>
+  <div>
+  	url<input type="url">
+  </div>
+
+
+
+
+
+
+	<div class="line"></div>
+	<div class="icon1"></div>
+	<div class="icon2"></div>
+	<div class="icon3"></div>
+	<div class="icon33"></div>
+
+
+
+</body>
+
+</html>
