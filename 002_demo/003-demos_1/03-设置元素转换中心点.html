@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div_1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*margin: 100px auto;*/
+            transition: all 1s;
+            /* 1.可以跟方位名词 */
+            /* transform-origin: left bottom; */
+            /* 2. 默认的是 50%  50%  等价于 center  center */
+            /* 3. 可以是px 像素 */
+            transform-origin: left bottom;
+
+            transition: all 0.3s;
+
+        }
+        
+        .div_1:hover {
+            transform:translate(60px,60px) rotate(60deg);
+            /*transform: rotate(60deg);*/
+        }
+
+/*        .p {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 2px;
+            height: 2px;
+            background-color: #000;
+        }*/
+    </style>
+</head>
+
+<body>
+    <div class="div_1"></div>
+    <!-- <div class="p"></div> -->
+</body>
+
+</html>
