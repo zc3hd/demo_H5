@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    /* 1.透视写到被观察元素的父盒子上面 */
+    perspective: 1000px;
+    
+    /* 2.开启子元素3D环境，移动还是不出来的；*/
+    /*transform-style: preserve-3d;*/
+  }
+  
+  div {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    
+
+    /* 沿着轴线的正向方向进行移动 
+    关键词：沿着
+    */
+    /*transform: translateX(100px);
+    transform: translateY(100px);
+    transform: translateZ(100px);*/
+
+
+    /* 简写  */
+    transform: translate3d(100px,100px,100px);
+
+
+    /* 注意：
+    1. XY方向可以百分比：是因为我们盒子有宽高
+    2. Z 方向不能%：没有厚度；
+    */
+    transform: translate3d(100%,100%,100px);
+  }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

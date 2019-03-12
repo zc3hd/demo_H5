@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  body {
+    /* 1.透视写到被观察元素的父盒子上面 */
+    perspective: 1000px;
+
+    transform-style: preserve-3d;
+  }
+  
+  img {
+    display: block;
+    margin: 100px auto;
+    transition: all 3s;
+  }
+  
+  img:hover {
+    /* 2.在绕着X轴进行顺时针转的时候，可以感受到近大远小的透视 视角
+    关键词：绕着
+    */
+    /*transform: rotateX(180deg);*/
+    /*transform: rotateY(180deg);*/
+    /*transform: rotateZ(180deg);*/
+    /* 3.注意：
+    一次只能绕着一个轴线进行渲染；
+    */
+    /* 4.自定义轴线 旋转
+    自定义：从0,0,0，到 1, 1, 0 这个方向的轴线：正向；
+    */
+    /*transform: rotate3d(1, 1, 0, 30deg);*/
+  }
+  </style>
+</head>
+
+<body>
+  <img src="media/pig.jpg" alt="">
+</body>
+
+</html>
