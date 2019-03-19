@@ -1,0 +1,204 @@
+// 2.引入：首页的样式less文件
+@import "common";
+// @import 导入的意思 可以把一个样式文件导入到另外一个样式文件里面
+// link 是把一个 样式文件引入到 html页面里面
+// 3.设置body的宽度，因为宽度是随着屏幕变化而变化，所以宽度是15
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #F2F2F2;
+}
+
+// 看我们现在拿到的设计稿是750px
+@bs_num: 50;
+.search {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 750rem / @bs_num;
+    height: 88rem / @bs_num;
+    background-color: #FFC001;
+    .content {
+        width: 44rem / @bs_num;
+        height: 70rem / @bs_num;
+        margin: 11rem / @bs_num 25rem / @bs_num 7rem / @bs_num 24rem / @bs_num;
+        background: url(../images/classify.png) no-repeat;
+        background-size: 44rem / @bs_num 70rem / @bs_num;
+    }
+    .box {
+        flex: 1;
+        input {
+            outline: none;
+            border: 0;
+            background-color: #fff;
+            width: 100%;
+            height: 66rem / @bs_num;
+            border-radius: 33rem / @bs_num;
+            margin-top: 12rem / @bs_num;
+            font-size: 25rem / @bs_num; //   
+            padding-left: 55rem / @bs_num;
+            color: #757575;
+            box-sizing: border-box;
+        }
+    }
+    .login {
+        width: 75rem / @bs_num;
+        height: 70rem / @bs_num;
+        margin: 9.5rem / @bs_num;
+        line-height: 70rem / @bs_num;
+        text-align: center;
+        font-size: 25rem / @bs_num;
+        color: #fff;
+    }
+}
+
+
+// banner
+// 这里设置百分比就行，因为body就是按级别变化，所以，banner也是按级别变化
+// 
+.banner {
+    width: 100%;
+    // height: 368rem / @baseFont;
+    img {
+        width: 100%;
+        // height: 100%;
+    }
+}
+
+
+// ad
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+// 浮动元素撑不起高度
+nav {
+    // width: 750rem / @baseFont;
+    a {
+        // 但是内部子项的宽高都设定了。不是靠img本事的设置撑起来。
+        float: left;
+        width: 150rem / @bs_num;
+        height: 140rem / @bs_num;
+        text-align: center;
+        img {
+            display: block;
+            width: 82rem / @bs_num;
+            height: 82rem / @bs_num;
+            margin: 10rem / @bs_num auto 0;
+        }
+        span {
+            display: block;
+            font-size: 25rem / @bs_num;
+            color: #333;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// 页面元素rem计算公式： 页面元素的px / html 字体大小 50
+// search-content
+// @baseFont: 50;
+// .search-content {
+//     display: flex;
+//     position: fixed;
+//     top: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 15rem;
+//     height: 88rem / @baseFont;
+//     background-color:#FFC001;
+//     .classify {
+//         width: 44rem / @baseFont;
+//         height: 70rem / @baseFont;
+//         margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+//         background: url(../images/classify.png) no-repeat;
+//         // 背景缩放
+//         background-size: 44rem / @baseFont 70rem / @baseFont;
+//     }
+//     .search {
+//         flex: 1;
+//         input {
+//             outline: none;
+//             width: 100%;
+//             border: 0;
+//             height: 66rem / @baseFont;
+//             border-radius: 33rem / @baseFont;
+//             background-color:#FFF2CC;
+//             margin-top: 12rem / @baseFont;
+//             font-size: 25rem / @baseFont;
+//             padding-left: 55rem / @baseFont;
+//             color: #757575;
+//         }
+//     }
+//     .login {
+//         width: 75rem / @baseFont;
+//         height: 70rem / @baseFont;
+//         line-height: 70rem / @baseFont;
+//         margin: 10rem / @baseFont;
+//         font-size: 25rem / @baseFont;
+//         text-align: center;
+//         color: #fff;
+//     }
+// }
+// // banner
+// .banner {
+//     width: 750rem / @baseFont;
+//     height: 368rem / @baseFont;
+//     img {
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+// // ad
+// .ad {
+//     display: flex;
+//     a {
+//         flex: 1;
+//         img {
+//             width: 100%;
+//         }
+//     }
+// }
+
+
+// // nav
+// nav {
+//     width: 750rem / @baseFont;
+//     a {
+//         float: left;
+//         width: 150rem / @baseFont;
+//         height: 140rem / @baseFont;
+//         text-align: center;
+//         img {
+//             display: block;
+//             width: 82rem / @baseFont;
+//             height: 82rem / @baseFont;
+//             margin: 10rem / @baseFont auto 0;
+//         }
+//         span {
+//             font-size: 25rem / @baseFont;
+//             color: #333;
+//         }
+//     }
+// }
