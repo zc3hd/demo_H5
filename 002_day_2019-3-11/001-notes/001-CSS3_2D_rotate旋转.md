@@ -1,10 +1,12 @@
 # CSS 2D rotate
 
-## 1.辅助知识
+## 1.目标
 
-* 顺时针：顺着我们时针的方向转动就是顺时针，同理逆时针；
+* 让页面的元素
 
 ## 2.代码知识
+
+顺时针：顺着我们时针的方向转动就是顺时针，同理逆时针；
 
 在要设置旋转样式的标签CSS写rotate
 ```css
@@ -17,7 +19,12 @@ img {
 }
 ```
 
+在浏览器中修改 **rotate** 数值：
+
+![4](E:/000-all_learning/005-itcast_sys/001-web_mobile/002_day_2019-3-11/001-notes/img/4.gif)
+
 【使用场景1】鼠标悬浮上面进行动画旋转一定的角度
+
 ```css
 img {
     width: 150px;
@@ -55,17 +62,14 @@ div::after {
     transform: rotate(45deg);
     transition: all 0.2s;
 }
-/* 鼠标经过div  里面的三角旋转 
-注意伪类  要写在伪元素前面
+/* 鼠标经过div  里面的三角旋转  
 */
 div:hover::after {
     transform: rotate(225deg);
 }
 ```
 
-在浏览器中修改 **rotate** 数值：
 
-![4](img/4.gif)
 
 注意：
 
