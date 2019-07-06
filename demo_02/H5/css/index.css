@@ -1,0 +1,250 @@
+body {
+  width: 100%;
+  /* 市场上 默认最小值 */
+  min-width: 320px;
+  /* <768px 手机范围 */
+  /* 最大值：公司UI给你的设计图  */
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* ------------------------------------------------------顶部栏 */
+
+header {
+  height: 45px;
+}
+
+header div {
+  height: 100%;
+  float: left;
+  background-color: #222;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+header div:nth-child(1) {
+  width: 8%;
+}
+
+header div:nth-child(1) img {
+  width: 10px;
+}
+
+header div:nth-child(2) {
+  width: 10%;
+}
+
+header div:nth-child(2) img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+header div:nth-child(3) {
+  width: 57%;
+}
+
+header div:nth-child(4) {
+  width: 25%;
+  background-color: red;
+}
+
+
+/* -----------------------------------------------------------搜索区 */
+
+.search {
+  /* */
+  height: 44px;
+  /* position: relative; */
+  /* 1.固定定位 */
+  position: fixed;
+  /* 2.固定定位，使宽度失效 */
+  /* 不是相对于body,html,相对于可视窗口 */
+  width: 100%;
+  /* 3.拉伸保护 */
+  /* 市场上 默认最小值 */
+  min-width: 320px;
+  /* <768px 手机范围 */
+  /* 最大值：公司UI给你的设计图  */
+  max-width: 640px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.search .left {
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background-color: pink; */
+}
+
+
+/* 图片：伪元素 */
+
+.search .left::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 18px;
+  background: url('../imgs/s-btn.png') no-repeat;
+  background-size: 100%;
+  margin: 14px 0 0 15px;
+}
+
+.search .right {
+  width: 40px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* background-color: red; */
+  line-height: 44px;
+  color: #fff;
+}
+
+
+/* -----------中间区域 */
+
+.search .mid {
+  height: 30px;
+  background-color: #fff;
+  margin: 7px 10px 0;
+  border-radius: 15px;
+  position: relative;
+}
+
+.search .mid .jd {
+  width: 20px;
+  height: 15px;
+  background: url('../imgs/jd.png') no-repeat;
+  background-size: 20px;
+  position: absolute;
+  top: 6px;
+  left: 7px;
+}
+
+
+/* 小竖线 */
+
+.search .mid .jd::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 15px;
+  border-right: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+
+/* 放大镜 */
+
+.search .mid .fangda {
+  width: 15px;
+  height: 15px;
+  background: url('../imgs/jd-sprites.png') no-repeat -83px 0;
+  background-size: 199px;
+  position: absolute;
+  top: 8px;
+  left: 50px;
+}
+
+
+/* ---------------------------------------------------------轮播图 */
+
+.banner {}
+
+.banner a {
+  display: block;
+}
+
+.banner a img {
+  width: 100%;
+  /* vertical-align: middle; */
+  display: block;
+}
+
+
+/* ------------------------------------------------------广告区 */
+
+.ads {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ads a {
+  float: left;
+  width: 33.33%;
+}
+
+.ads a img {
+  width: 100%;
+}
+
+
+/* ---------------------------------------------------------导航区 */
+
+nav {
+  margin: 20px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+nav a img {
+  width: 40px;
+}
+
+nav a p {
+  color: #666;
+  margin: 10px 0;
+}
+
+
+/* -------------------------------------------------- 抽奖区*/
+
+.chouj {}
+
+.chouj a {
+  float: left;
+  width: 25%;
+}
+
+.chouj a:nth-child(1) {
+  width: 50%;
+}
+
+.chouj a img {
+  width: 100%;
+}
+
+
+/* n 从0 开始计算 */
+
+
+/* 必须是n+2 不能2+n */
+
+.chouj a:nth-child(n+2) {
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+}

@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+input {
+  border: none;
+  outline: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+}
+.app .box {
+  width: 300px;
+  height: 200px;
+  background-color: #222;
+  position: absolute;
+  top: 50%;
+  left: 180px;
+  transform: translate(0%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.app .box .box_w {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box .box_w input {
+  width: 40px;
+  height: 26px;
+}
+.app .box .box_h {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: 0%;
+  right: -20px;
+  transform: translate(100%, 0%);
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box .box_h input {
+  width: 40px;
+  height: 26px;
+}
+.app .box .rem_box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-60px, -50%);
+}
+.app .box .rem_box .rem_info {
+  white-space: nowrap;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50px);
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box .rem_box .rem_info input {
+  width: 40px;
+  height: 26px;
+}
+.app .box .rem_box .rem_w {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  text-align: center;
+  transform: translate(0, 100%);
+}
+.app .box .rem_box .rem_h {
+  transform-origin: 0 0;
+  transform: translate(-20px, 100%) rotate(-90deg);
+}
+.app .box .rem_w_show {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.app .box .rem_w_show::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+.app .box .rem_w_show::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+.app .box .rem_w_show span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 12px;
+}
+.app .box .rem_h_show {
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+.app .box .rem_h_show::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #000;
+}
+.app .box .rem_h_show::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #000;
+}
+.app .box .rem_h_show span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(10%, -50%);
+  font-size: 12px;
+}
+.app .box .rem_pu {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.app .box .rem_pu .row {
+  width: 1000%;
+  overflow: hidden;
+}
+.app .box .rem_pu .row .rem {
+  width: 50px;
+  height: 50px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  float: left;
+}
+.app .box .sure {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: blue;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.app .box_db {
+  width: 300px;
+  height: 200px;
+  background-color: #222;
+  position: absolute;
+  top: 50%;
+  right: 180px;
+  transform: translate(0%, -50%) scale(0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.app .box_db .box_w {
+  width: 300px;
+  height: 40px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box_db .box_w input {
+  width: 40px;
+  height: 26px;
+  background-color: #ccc;
+}
+.app .box_db .box_h {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  bottom: 0%;
+  right: -20px;
+  transform: translate(100%, 0%);
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box_db .box_h input {
+  width: 40px;
+  height: 26px;
+  background-color: #ccc;
+}
+.app .box_db .rem_box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-60px, -50%);
+}
+.app .box_db .rem_box .rem_info {
+  white-space: nowrap;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50px);
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 26px;
+}
+.app .box_db .rem_box .rem_info input {
+  width: 40px;
+  height: 26px;
+}
+.app .box_db .rem_box .rem_w {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  text-align: center;
+  transform: translate(0, 100%);
+}
+.app .box_db .rem_box .rem_h {
+  transform-origin: 0 0;
+  transform: translate(-20px, 100%) rotate(-90deg);
+}
+.app .box_db .rem_w_show {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.app .box_db .rem_w_show::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+.app .box_db .rem_w_show::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+.app .box_db .rem_w_show span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 12px;
+}
+.app .box_db .rem_h_show {
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #000;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+.app .box_db .rem_h_show::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #000;
+}
+.app .box_db .rem_h_show::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 1px;
+  border-top: 1px solid #000;
+}
+.app .box_db .rem_h_show span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(10%, -50%);
+  font-size: 12px;
+}
+.app .box_db .rem_pu {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.app .box_db .rem_pu .row {
+  width: 1000%;
+  overflow: hidden;
+}
+.app .box_db .rem_pu .row .rem {
+  width: 50px;
+  height: 50px;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  float: left;
+}
+.app .box_db .sure {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: blue;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}

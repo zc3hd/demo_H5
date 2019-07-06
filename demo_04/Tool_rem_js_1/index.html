@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="app">
+    <div class="box" id="box">
+      <!-- 宽度 -->
+      <div class="box_w">
+        width:
+        <input type="text" value="300" id="box_w">
+      </div>
+
+      <!-- 高度 -->
+      <div class="box_h">
+        height:
+        <input type="text" value="200" id="box_h">
+      </div>
+
+
+      <!-- rem_box 实例 -->
+      <div class="rem_box" id="rem_box">
+        <!-- 划分-->
+        <div class="rem_info">
+          <!-- 750px设计稿，划分 -->
+          750 /
+          <input type="text" value="15" id="rem_fenshu"> 份
+        </div>
+
+        <!-- 宽高 -->
+        <!-- rem_w -->
+        <div class="rem_w" id="rem_w">50px</div>
+        <div class="rem_w rem_h" id="rem_h">50px</div>
+      </div>
+
+
+      <!-- rem 标示 -->
+      <div class="rem_w_show">
+        <span id="rem_w_show">50rem</span>
+      </div>
+      <div class="rem_h_show">
+        <span id="rem_h_show">50rem</span>
+      </div>
+
+
+
+      <!-- rem 铺满 -->
+      <div class="rem_pu" id="rem_pu">
+        <div class="row">
+          <div class="rem"></div>
+          <div class="rem"></div>
+          <div class="rem"></div>
+          <div class="rem"></div>
+        </div>
+
+      </div>
+
+
+      <!-- 确认按钮 -->
+      <div class="sure" id="sure">确认</div>
+
+
+    </div>
+
+
+
+
+
+    <!-- 等比盒子 -->
+    <div class="box_db" id="box_db">
+      <!-- 宽度 -->
+      <div class="box_w">
+        width:
+        <input type="text" value="300" id="box_db_w" readonly>
+      </div>
+
+      <!-- 高度 -->
+      <div class="box_h">
+        height:
+        <input type="text" value="200" id="box_db_h" readonly>
+      </div>
+
+
+      <!-- rem_box 实例 -->
+      <div class="rem_box" id="rem_db_box">
+        <!-- 宽高 -->
+        <!-- rem_w -->
+        <div class="rem_w" id="rem_db_w">50px</div>
+        <div class="rem_w rem_h" id="rem_db_h">50px</div>
+      </div>
+
+
+      <!-- rem 标示 -->
+      <div class="rem_w_show">
+        <span id="rem_db_w_show">50rem</span>
+      </div>
+      <div class="rem_h_show">
+        <span id="rem_db_h_show">50rem</span>
+      </div>
+
+
+
+      <!-- rem 铺满 -->
+      <div class="rem_pu" id="rem_db_pu">
+        <div class="row">
+          <div class="rem"></div>
+          <div class="rem"></div>
+          <div class="rem"></div>
+          <div class="rem"></div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+<script src="./jquery.js"></script>
+<script src="./index.js"></script>
+
+</html>

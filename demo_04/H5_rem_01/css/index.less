@@ -1,0 +1,123 @@
+// 1.原稿实现
+
+
+// 2.2 拿到当前设计稿750px 
+// 对应档位的HTML font-size 75px 1rem = 75px
+// 把页面中所有用到px单位的属性全部替换为rem单位；
+// 白话：看px值是占有几个rem   150px 占2个rem  150rem/75
+@base_fontSize:75;
+
+body {
+  width:750rem/@base_fontSize;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 24rem/@base_fontSize;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// ----------------------------------------------------搜索区
+header {
+  height: 88rem/@base_fontSize;
+  // 测量88px 75px = 1rem
+  // 88rem/75
+
+
+
+  
+  // flex布局 默认主轴
+  display: flex;
+  background-color: #FFC001;
+  // 固定定位
+  position: fixed;
+  width: 750rem/@base_fontSize;
+  min-width: 320px;
+
+  .items {
+    width: 40rem/@base_fontSize;
+    height: 70rem/@base_fontSize;
+    margin: 9rem/@base_fontSize 15rem/@base_fontSize;
+    background: url('../imgs/classify.png') no-repeat;
+    background-size: 40rem/@base_fontSize;
+  }
+  .search {
+    flex: 1;
+    background-color: #fff;
+    margin: 10rem/@base_fontSize 0;
+    border-radius: 34rem/@base_fontSize;
+    line-height: 68rem/@base_fontSize;
+    padding-left: 35rem/@base_fontSize;
+  }
+  .login {
+    width: 88rem/@base_fontSize;
+    height: 88rem/@base_fontSize;
+    line-height: 88rem/@base_fontSize;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+
+// ---------------------------------------------------banner
+.banner {
+  a {
+    display: block;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+
+
+// --------------------------------------------------ads
+.ads {
+  // flex布局 默认主轴
+  display: flex;
+  a {
+    flex:1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// -------------------------------------------nav
+nav {
+  height: 280rem/@base_fontSize;
+  // flex布局
+  display: flex;
+  // 
+  flex-wrap: wrap;
+
+  // 局部布局
+  a {
+    flex: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 82rem/@base_fontSize;
+      margin: 10rem/@base_fontSize 0;
+    }
+
+    span {
+      color: #666;
+    }
+  }
+}
+
+
+
+
+

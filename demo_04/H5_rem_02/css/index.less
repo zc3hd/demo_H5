@@ -1,0 +1,142 @@
+// 1.原稿实现
+
+
+
+// 2.2 拿到当前设计稿750px 
+// JS 默认划分10 font-size 75px 1rem = 75px
+// 把页面中所有用到px单位的属性全部替换为rem单位；
+// 白话：看px值是占有几个rem   150px 占2个rem  150rem/75
+
+// JS 不知道750px以上不变；
+// 人为设置：超过750px 时 1rem = 75px;
+@media screen and (min-width:750px) {
+  html {
+    font-size: 75px!important;
+  }
+}
+
+
+// JS 不知道 320px 以下不变
+// 人为设置：小于320px时 1rem = 32px;
+@media screen and (max-width:320px) {
+  html {
+    font-size: 32px!important;
+  }
+}
+
+
+@base_fontsize:75;
+
+
+body {
+  width:750rem/@base_fontsize;
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 24rem/@base_fontsize;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// ----------------------------------------------------搜索区
+header {
+  height: 88rem/@base_fontsize;
+  
+  // flex布局 默认主轴
+  display: flex;
+  background-color: #FFC001;
+  // 固定定位
+  position: fixed;
+  width: 750rem/@base_fontsize;
+  min-width: 320px;
+
+  .items {
+    width: 40rem/@base_fontsize;
+    height: 70rem/@base_fontsize;
+    margin: 9rem/@base_fontsize 15rem/@base_fontsize;
+    background: url('../imgs/classify.png') no-repeat;
+    background-size: 40rem/@base_fontsize;
+  }
+  .search {
+    flex: 1;
+    background-color: #fff;
+    margin: 10rem/@base_fontsize 0;
+    border-radius: 34rem/@base_fontsize;
+    line-height: 68rem/@base_fontsize;
+    padding-left: 35rem/@base_fontsize;
+    font-size: 24rem/@base_fontsize;
+  }
+  .login {
+    width: 88rem/@base_fontsize;
+    height: 88rem/@base_fontsize;
+    line-height: 88rem/@base_fontsize;
+    text-align: center;
+    color: #fff;
+    font-size: 24rem/@base_fontsize;
+  }
+}
+
+
+// ---------------------------------------------------banner
+.banner {
+  a {
+    display: block;
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
+
+
+// --------------------------------------------------ads
+.ads {
+  // flex布局 默认主轴
+  display: flex;
+  a {
+    flex:1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// -------------------------------------------nav
+nav {
+  height: 280rem/@base_fontsize;
+  // flex布局
+  display: flex;
+  // 
+  flex-wrap: wrap;
+
+  // 局部布局
+  a {
+    flex: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 82rem/@base_fontsize;
+      margin: 10rem/@base_fontsize 0;
+    }
+
+    span {
+      color: #666;
+      font-size: 24rem/@base_fontsize;
+    }
+  }
+}
+
+
+
+
+

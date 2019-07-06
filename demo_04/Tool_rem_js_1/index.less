@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  position: relative;
+  overflow: hidden;
+
+  // 盒子
+  .box {
+    width: 300px;
+    height: 200px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    left: 180px;
+    transform: translate(0%,-50%);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    
+
+
+    // 盒子 宽
+    .box_w {
+      width: 300px;
+      height: 40px;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 40px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 26px;
+      input {
+        width: 40px;
+        height: 26px;
+      }
+    }
+    
+    // 盒子右侧
+    .box_h {
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      bottom: 0%;
+      right: -20px;
+      transform: translate(100%,0%);
+      line-height: 40px;
+      font-weight: 600;
+      font-size: 26px;
+      input {
+        width: 40px;
+        height: 26px;
+      }
+    }
+ 
+    // rem 实例盒子
+    .rem_box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50-10px,-50%);
+
+      // rem_说明
+      .rem_info {
+        white-space:nowrap;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0,-40-10px);
+
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 26px;
+        input {
+          width: 40px;
+          height: 26px;
+        }
+      }
+
+
+
+
+      // rem_w 
+      .rem_w {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        text-align: center;
+        transform: translate(0,100%);
+      }
+      .rem_h {
+        transform-origin: 0 0;
+        transform: translate(-20px,100%) rotate(-90deg);
+      }
+
+
+
+    }
+
+    // rem 宽度标示
+    .rem_w_show {
+      width: 100%;
+      // height: 1px;
+      border-bottom: 1px solid #000;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 15px;
+        border-left: 1px solid #000;
+      }
+      &::after {
+        content:"";
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 15px;
+        border-left: 1px solid #000;
+      }
+      span {
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        font-size: 12px;
+      }
+    }
+    .rem_h_show {
+      width: 1px;
+      height: 100%;
+      border-right: 1px solid #000;
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 1px;
+        border-top: 1px solid #000;
+      }
+      &::after {
+        content:"";
+        position: absolute;
+        bottom:0;
+        left: 0;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 1px;
+        border-top: 1px solid #000;
+      }
+      span {
+        position: absolute;
+        top:50%;
+        left: 0;
+        transform: translate(10%,-50%);
+        font-size: 12px;
+      }
+    }
+
+
+
+
+    // rem 铺满
+    .rem_pu {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .row {
+        width: 1000%;
+        overflow: hidden;
+        .rem {
+          width: 50px;
+          height: 50px;
+          border-right: 2px solid red;
+          border-bottom: 2px solid red;
+          float: left;
+        }
+      }
+
+    }
+
+
+    // sure
+    .sure {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: blue;
+      margin-top: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+
+  }
+
+
+  // 等比盒子
+  .box_db {
+    width: 300px;
+    height: 200px;
+    background-color: #222;
+    position: absolute;
+    top: 50%;
+    right: 180px;
+    transform: translate(0%,-50%) scale(0.8);
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    
+
+
+    // 盒子 宽
+    .box_w {
+      width: 300px;
+      height: 40px;
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      line-height: 40px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 26px;
+      input {
+        width: 40px;
+        height: 26px;
+        background-color: #ccc;
+      }
+    }
+    
+    // 盒子右侧
+    .box_h {
+      width: 200px;
+      height: 40px;
+      position: absolute;
+      bottom: 0%;
+      right: -20px;
+      transform: translate(100%,0%);
+      line-height: 40px;
+      font-weight: 600;
+      font-size: 26px;
+      input {
+        width: 40px;
+        height: 26px;
+        background-color: #ccc;
+      }
+    }
+ 
+    // rem 实例盒子
+    .rem_box {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50-10px,-50%);
+
+      // rem_说明
+      .rem_info {
+        white-space:nowrap;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(0,-40-10px);
+
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 26px;
+        input {
+          width: 40px;
+          height: 26px;
+        }
+      }
+
+
+
+
+      // rem_w 
+      .rem_w {
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        text-align: center;
+        transform: translate(0,100%);
+      }
+      .rem_h {
+        transform-origin: 0 0;
+        transform: translate(-20px,100%) rotate(-90deg);
+      }
+
+
+
+    }
+
+    // rem 宽度标示
+    .rem_w_show {
+      width: 100%;
+      // height: 1px;
+      border-bottom: 1px solid #000;
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 15px;
+        border-left: 1px solid #000;
+      }
+      &::after {
+        content:"";
+        position: absolute;
+        top:0;
+        right: 0;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 15px;
+        border-left: 1px solid #000;
+      }
+      span {
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%,-100%);
+        font-size: 12px;
+      }
+    }
+    .rem_h_show {
+      width: 1px;
+      height: 100%;
+      border-right: 1px solid #000;
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      &::before {
+        content:"";
+        position: absolute;
+        top:0;
+        left: 0;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 1px;
+        border-top: 1px solid #000;
+      }
+      &::after {
+        content:"";
+        position: absolute;
+        bottom:0;
+        left: 0;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 1px;
+        border-top: 1px solid #000;
+      }
+      span {
+        position: absolute;
+        top:50%;
+        left: 0;
+        transform: translate(10%,-50%);
+        font-size: 12px;
+      }
+    }
+
+
+
+
+    // rem 铺满
+    .rem_pu {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      .row {
+        width: 1000%;
+        overflow: hidden;
+        .rem {
+          width: 50px;
+          height: 50px;
+          border-right: 2px solid red;
+          border-bottom: 2px solid red;
+          float: left;
+        }
+      }
+
+    }
+
+
+    // sure
+    .sure {
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      background-color: blue;
+      margin-top: 10px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    }
+
+  }
+}
+
+
