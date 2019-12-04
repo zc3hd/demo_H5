@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 30px;
+      border: 1px solid #000;
+      position: relative;
+    }
+    /* 伪元素：一般情况，小图标的引用，或者自己实现小图标 */
+    
+    .box::before {
+      content: "";
+      /* 行内元素 */
+      width: 15px;
+      height: 15px;
+      /* background-color: blue; */
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      transform: rotate(45deg);
+      transition: all 0.3s;
+    }
+    /* .box::before:hover 伪元素后面不能跟着伪类 */
+    /*   
+    .box::before:hover {
+      transform: rotate(180deg);
+    } */
+    /* 正确的写法 */
+    
+    .box:hover::before {
+      /* 225= 45+180 */
+      /* 旋转：相对于一开始的状态 45deg */
+      transform: rotate(225deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+
+  </div>
+</body>
+
+</html>

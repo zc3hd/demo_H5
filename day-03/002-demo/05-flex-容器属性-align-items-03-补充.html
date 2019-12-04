@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #000;
+      /* 父级：容器 */
+      display: flex;
+      /* 默认值 row */
+      /* 换行 wrap：一圈又一圈*/
+      flex-wrap: wrap;
+      /* 控制单行 */
+      align-items: stretch;
+    }
+    
+    .son {
+      width: 100px;
+      /* height: 100px; */
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .div_1 {
+      width: 200px;
+      height: 200px;
+      background-color: #222;
+      transition: all 0.3s;
+      /* 定位：改变位置 ，脱标，会影响其他盒子的位置*/
+      /* position: absolute;
+      top: 5px;
+      left: 50px; */
+      /* 转化：改变位置，没有使盒子脱标，不会影响其他盒子的位置； */
+      /* 场景：对盒子布局，做微调的可以使用 */
+      /* transform: translate(50px, 50px); */
+      transform: translateY(5px);
+    }
+    /* div:hover { */
+    /* 在X轴方向做移动：+值，正方向 -值：左移动*/
+    /* 在自身的基础上做移动 */
+    /* px：来自UI工程师 */
+    /* 单个px值 */
+    /* transform: translateX(-100px); */
+    /* 百分数： 相对于自身的宽度*/
+    /* transform: translateX(100%); */
+    /* 移动自身高度的一半：负方向 */
+    /* transform: translateY(-50%); */
+    /* 两个参数：x,y位置上的移动 固定值 */
+    /* transform: translate(100px, 100px); */
+    /* 百分数：方向 左上方 移动自身宽高的一半 */
+    /* transform: translate(-50%, -50%); */
+    /* } */
+    
+    .div_2 {
+      width: 500px;
+      height: 200px;
+      background-color: red;
+    }
+    
+    a {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      /* 2.定位会使行内元素，变为块级属性, transform: translate对行内不生效*/
+      /* position: absolute;
+      top: 400px;
+      left: 100px; */
+      transform: translate(100px, 400px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div_1"></div>
+  <div class="div_2"></div>
+  <a href="#">行内</a>
+</body>
+
+</html>

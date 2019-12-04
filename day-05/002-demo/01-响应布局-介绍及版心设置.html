@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* 市场约定的档位划分  适配手机、平板、PC设备 */
+    /* 媒体查询把市场的各种端都划分开了,档位下版心设置宽度: */
+    /* 0-768px XS 手机*/
+    
+    @media screen and (min-width:0) {
+      .container {
+        width: 100%;
+      }
+    }
+    /* sm 平板 */
+    
+    @media screen and (min-width:768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    /* 小PC端 md */
+    
+    @media screen and (min-width:992px) {
+      .container {
+        width: 970px;
+      }
+    }
+    /* lg 大显示PC端 */
+    
+    @media screen and (min-width:1200px) {
+      .container {
+        width: 1170px;
+      }
+    }
+    
+    .container {
+      height: 600px;
+      background-color: #ccc;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>

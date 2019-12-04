@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+
+  <style>
+    ul {
+      list-style: none;
+    }
+    
+    li {
+      float: left;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #000;
+      margin-right: 10px;
+      border-radius: 50%;
+      line-height: 50px;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    
+    div {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+    }
+    
+    li:hover {
+      /* 放大： */
+      /* 两个参数：x,y比例值 相对自身的宽高 */
+      /* transform: scale(2, 4); */
+      /* 一个参数：x和y方向采用同一个比例值 常用 */
+      transform: scale(2);
+      /* 1.transform转化2D，不会影响其他盒子的位置 */
+      /* 2.缩放：下面的文字、CSS属性设置、子元素都会跟着被缩放 */
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>
+      <div></div>
+    </li>
+    <li>4</li>
+  </ul>
+</body>
+
+</html>

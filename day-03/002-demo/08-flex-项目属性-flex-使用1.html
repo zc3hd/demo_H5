@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 600px;
+      height: 100px;
+      border: 1px solid #000;
+      display: flex;
+    }
+    
+    .p span {
+      /* width: 100px; */
+      height: 100px;
+    }
+    /* 项目属性： */
+    
+    .s_1 {
+      /* 主轴上划分剩余空间 */
+      /* s_1：我自己占了几份，看其他盒子占几，总共占有几份 */
+      /* 常规：整数 flex: 2;*/
+      /* 设置百分数：常规，子元素的百分数加起来要为100% */
+      flex: 20%;
+      background-color: #ccc;
+    }
+    
+    .s_2 {
+      flex: 80%;
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="s_1"></span>
+    <span class="s_2"></span>
+  </div>
+</body>
+
+</html>

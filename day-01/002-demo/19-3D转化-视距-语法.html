@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      /* 作用：产生近大远小的透视感 */
+      /* 值越大：Z方向变化不剧烈 */
+      /* 值越小：Z方向变化越剧烈 */
+      /* 添加位置：设置body上，以body的视角形成统一透视感，把下面所有的子元素，形成统一的透视感 */
+      perspective: 1000px;
+    }
+    
+    .parent {
+      width: 200px;
+      height: 200px;
+      background-color: #222;
+      float: left;
+      /* 设置在各自的父亲上，意味着以各自的父亲的角度进行观测父亲下面的子元素，形成单独透视感； */
+      /* perspective: 1000px; */
+    }
+    
+    .son {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      margin: 50px;
+      transition: all 0.3s;
+    }
+    
+    .son:hover {
+      transform: translateZ(100px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+  <div class="parent">
+    <div class="son"></div>
+  </div>
+</body>
+
+</html>

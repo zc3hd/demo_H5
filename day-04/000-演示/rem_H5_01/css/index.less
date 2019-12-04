@@ -1,0 +1,108 @@
+@import './common';
+
+
+// 750px设计稿：1rem= 50px;
+@base:50;
+
+body {
+  min-width: 320px;
+  // max-width: 750px;
+  // width: 100%;
+  width: 750rem/@base;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+// -----------------------------------------------------------header
+header {
+  display: flex;
+  height: 88rem/@base;
+  background-color: #FFC001;
+  position: fixed;
+ 
+  min-width: 320px;
+  // max-width: 750px;
+  // width: 100%;
+  width: 750rem/@base;
+  .items {
+    width: 40rem/@base;
+    height: 70rem/@base;
+    margin: 9rem/@base 15rem/@base;
+    background: url('../imgs/classify.png') no-repeat;
+    background-size: 40rem/@base;
+  }
+  .search {
+    flex: 1;
+    margin: 10rem/@base 3rem/@base;
+    border-radius: 34rem/@base;
+    background-color: #fff;
+    line-height: 68rem/@base;
+    font-size: 24rem/@base;
+    box-sizing: border-box;
+    padding-left: 50rem/@base;
+    color: #666;
+  }
+  .login {
+    width: 88rem/@base;
+    height: 88rem/@base;
+    line-height: 88rem/@base;
+    text-align: center;
+    color: #fff;
+    font-size: 24rem/@base;
+  }
+}
+
+
+
+// ----------------------------------------------------banner
+.banner {
+  a {
+    display: block;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+}
+
+
+// ----------------------------------------------------ads
+.ads {
+  display: flex;
+  a {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+
+// ------------------------------------------------------nav
+nav {
+  // 1.整体布局 flex,换行 子项：flex:20% 
+  display: flex;
+  flex-wrap: wrap;
+  height: 280rem/@base;
+  a {
+    flex: 20%;
+    height: 140rem/@base;
+
+    // 2.局部：flex 确认主轴，侧轴对齐；
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 82rem/@base;
+      margin: 10rem/@base 0;
+    }
+    span {
+      font-size: 24rem/@base;
+      color: #666;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+    body {
+      width: 100%;
+      min-width: 320px;
+      max-width: 540px;
+      margin: 0 auto;
+      font-size: 14px;
+      background-color: #ccc;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #666;
+    }
+    /* -----------------------------------整体布局 */
+    
+    header {
+      height: 44px;
+      background-color: #F6F6F6;
+      border-bottom: 1px solid #666;
+      display: flex;
+      /* 固定定位 脱标，宽度失效*/
+      position: fixed;
+      /* 手动加100% */
+      width: 100%;
+      min-width: 320px;
+      max-width: 540px;
+    }
+    
+    header .search {
+      /* 把剩余空间全部占去 */
+      flex: 1;
+      /* 高度要不要设置？不要，因为align-self:auto */
+      /* 父亲没有设置align-items,auto ----->拉伸 */
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      margin: 7px 10px;
+      position: relative;
+      line-height: 30px;
+      padding-left: 35px;
+    }
+    
+    header .search::before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: red;
+      position: absolute;
+      top: 7px;
+      left: 10px;
+    }
+    
+    header a {
+      width: 44px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    header a .img {
+      width: 23px;
+      height: 23px;
+      /* background-color: #666; */
+      background: url('../imgs/sprite.png') no-repeat;
+      background-position: -59px -194px;
+      background-size: 104px;
+      margin: 3px 0;
+    }
+    
+    header a .info {
+      color: #666;
+    }
+    /* --------------------------------------.banner */
+    
+    .banner {
+      padding-top: 45px;
+    }
+    
+    .banner a {}
+    
+    .banner a img {
+      width: 100%;
+    }
+    /* ------------------------------nav_1 */
+    
+    .nav_1 {
+      height: 64px;
+      display: flex;
+      background-color: #fff;
+      margin: 5px 3px;
+      border-radius: 5px;
+    }
+    
+    .nav_1 a {
+      flex: 1;
+      /* background-color: #ccc; */
+      /* 单独形成flex布局 */
+      display: flex;
+      /* 主轴 */
+      flex-direction: column;
+      /* 侧轴居中 */
+      align-items: center;
+    }
+    
+    .nav_1 a .img {
+      width: 32px;
+      height: 32px;
+      /* background-color: blue; */
+      background: url('../imgs/localnav_bg.png') no-repeat;
+      margin: 5px 0;
+      background-position: 0 0;
+      /* 相对于自身的宽度 */
+      background-size: 32px;
+    }
+    /* ------------------------------nav_1 */
+    
+    .nav_2 {
+      height: 128px;
+      display: flex;
+      /* 换行 */
+      flex-wrap: wrap;
+      background-color: #fff;
+      margin: 5px 3px;
+      border-radius: 5px;
+    }
+    
+    .nav_2 a {
+      /* 加起来到了父级宽度，自动换行 */
+      flex: 20%;
+      /* background-color: #ccc; */
+      /* 单独形成flex布局 */
+      display: flex;
+      /* 主轴 */
+      flex-direction: column;
+      /* 侧轴居中 */
+      align-items: center;
+    }
+    
+    .nav_2 a .img {
+      width: 32px;
+      height: 32px;
+      /* background-color: blue; */
+      background: url('../imgs/localnav_bg.png') no-repeat;
+      margin: 5px 0;
+      background-position: 0 0;
+      /* 相对于自身的宽度 */
+      background-size: 32px;
+    }
+    /* ---------------------------------大导航 */
+    
+    nav {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    nav .one {
+      height: 88px;
+      display: flex;
+      background: -webkit-linear-gradient(30deg, #FA5A55, #FA994D);
+      /* 主轴：从左到右 */
+    }
+    
+    nav .one:nth-child(2) {
+      margin: 4px 0;
+    }
+    
+    nav .one .box {
+      flex: 1;
+      /* 要不要设置高度？不需要设置 */
+      /* background-color: blue; */
+      /* 单独flex */
+      display: flex;
+      /* 选择主轴：从上到下 */
+      flex-direction: column;
+    }
+    /* n:从0开始 */
+    /* n+2：n要写在前面  2n */
+    
+    nav .one .box:nth-child(n+2) {
+      border-left: 1px solid #ccc;
+    }
+    
+    nav .one .box a {
+      flex: 1;
+      color: #fff;
+      line-height: 44px;
+      text-align: center;
+      /* background-color: #222; */
+    }
+    
+    nav .one .box a:nth-child(2) {
+      border-top: 1px solid #ccc;
+    }
+    /* 第一个box下的a */
+    
+    nav .one .box_1 a {
+      background: url("../imgs/hotel.png") no-repeat;
+      background-size: 65%;
+      background-position: bottom center;
+    }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 500px;
+      height: 100px;
+      border: 1px solid #000;
+      display: flex;
+    }
+    
+    .s_1 {
+      width: 50px;
+      /* 为什么能看见？ align-self:auto*/
+      background-color: red;
+    }
+    
+    .s_2 {
+      width: 200px;
+      /* 值越小，排的越前 */
+      /* order: -1; */
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <div class="s_2"></div>
+    <div class="s_1"></div>
+
+  </div>
+</body>
+
+</html>

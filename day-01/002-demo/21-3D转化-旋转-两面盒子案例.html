@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      perspective: 800px;
+    }
+    
+    .p {
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      position: relative;
+      transition: all 0.3s;
+      /* 子元素做3D转化，需要找到上级父级，需要开启3D权限（3D空间），让子元素做的3D转化可以被观测到 */
+      transform-style: preserve-3d;
+    }
+    
+    .p div {
+      width: 200px;
+      height: 200px;
+      font-size: 80px;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    .s_1 {
+      background-color: pink;
+    }
+    
+    .s_2 {
+      background-color: blue;
+      z-index: -1;
+      /* 转 Y轴 180deg */
+      transform: rotateY(180deg);
+    }
+    
+    .p:hover {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <div class="s_1">1</div>
+    <div class="s_2">2</div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body>div {
+      float: left;
+    }
+    
+    .left {
+      /* 宽度固定后，再次增加你的border padding，向外走 */
+      /* 盒子的总宽 width = 设置CSS width + border +padding */
+      /* width: 140px;
+      height: 100px;
+      background-color: #ccc;
+      border-right: 10px solid blue;
+      border-left: 10px solid blue;
+      padding: 0 20px; */
+      /* CSS盒子模型: 再次增加你的border padding，向内走*/
+      /* 盒子的总宽 width = border+padding+内容区的宽度 */
+      box-sizing: border-box;
+      width: 200px;
+      height: 100px;
+      background-color: #ccc;
+      border-right: 10px solid blue;
+      border-left: 10px solid blue;
+      padding: 0 20px;
+    }
+    
+    .right {
+      width: 1150px;
+      height: 80px;
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left"></div>
+  <div class="right"></div>
+</body>
+
+</html>

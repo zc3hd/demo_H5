@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    @media screen and (min-width:0) {
+      .container {
+        width: 100%;
+      }
+      /* 预设置 */
+    }
+    /* sm 平板 */
+    
+    @media screen and (min-width:768px) {
+      .container {
+        width: 750px;
+      }
+      /* 预设置 */
+      /* div 又称为块级 100% */
+    }
+    /* 小PC端 md */
+    
+    @media screen and (min-width:992px) {
+      .container {
+        width: 970px;
+      }
+      .container div {
+        float: left;
+      }
+      /* .container .left {
+        width: 40%;
+      }
+      .container .mid {
+        width: 40%;
+      }
+      .container .right {
+        width: 20%;
+      } */
+      /* 想到个提前把老板要的10-100%宽度都提前预设类名 */
+      .container .md-1 {
+        width: 10%;
+      }
+      .container .md-2 {
+        width: 20%;
+      }
+      .container .md-3 {
+        width: 30%;
+      }
+      .container .md-4 {
+        width: 40%;
+      }
+      .container .md-5 {
+        width: 50%;
+      }
+      .container .md-6 {
+        width: 60%;
+      }
+      .container .md-7 {
+        width: 70%;
+      }
+      .container .md-8 {
+        width: 80%;
+      }
+      .container .md-9 {
+        width: 90%;
+      }
+      .container .md-10 {
+        width: 100%;
+      }
+    }
+    /* lg 大显示PC端 */
+    
+    @media screen and (min-width:1200px) {
+      .container {
+        width: 1170px;
+      }
+      .container div {
+        float: left;
+      }
+      /* .container .left {
+        width: 30%;
+      }
+      .container .mid {
+        width: 50%;
+      }
+      .container .right {
+        width: 20%;
+      } */
+      /* 想到个提前把老板要的10-100%宽度都提前预设类名 */
+      .container .lg-1 {
+        width: 10%;
+      }
+      .container .lg-2 {
+        width: 20%;
+      }
+      .container .lg-3 {
+        width: 30%;
+      }
+      .container .lg-4 {
+        width: 40%;
+      }
+      .container .lg-5 {
+        width: 50%;
+      }
+      .container .lg-6 {
+        width: 60%;
+      }
+      .container .lg-7 {
+        width: 70%;
+      }
+      .container .lg-8 {
+        width: 80%;
+      }
+      .container .lg-9 {
+        width: 90%;
+      }
+      .container .lg-10 {
+        width: 100%;
+      }
+    }
+    
+    .container {
+      height: 2000px;
+      border: 1px solid #000;
+      margin: 0 auto;
+    }
+    
+    .container .left {
+      background-color: #ccc;
+      height: 200px;
+    }
+    
+    .container .mid {
+      background-color: #222;
+      height: 800px;
+    }
+    
+    .container .right {
+      background-color: pink;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="md-2 lg-1 left">1</div>
+    <div class="md-5 lg-7 mid">2</div>
+    <div class="md-3 lg-2 right">3</div>
+    <!-- <div class="md-2 left">1</div>
+    <div class="md-5 mid">2</div>
+    <div class="md-3 right">3</div> -->
+  </div>
+</body>
+
+</html>

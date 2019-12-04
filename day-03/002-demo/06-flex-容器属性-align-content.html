@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #000;
+      /* 父级：容器 */
+      display: flex;
+      /* 默认值 row */
+      /* 换行 wrap：一圈又一圈*/
+      flex-wrap: wrap;
+      /* align-items：多行的情况下，每个行都是单独的、独立的 */
+      /* 多行对齐的：把多行看成整体，不独立 */
+      /* align-content: flex-start; */
+      /* 侧轴尾部 */
+      /* align-content: flex-end; */
+      /* align-content: center; */
+      /* align-content: space-between; */
+      /* align-content: space-around; */
+      /* 拉伸：在侧轴上拉伸，注释掉侧轴方向上大小的属性设置 */
+      /* align-content: stretch; */
+    }
+    
+    .son {
+      width: 100px;
+      /* height: 100px; */
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+  </div>
+</body>
+
+</html>

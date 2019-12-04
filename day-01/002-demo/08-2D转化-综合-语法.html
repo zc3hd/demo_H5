@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #222;
+      transition: all 3s;
+      font-size: 80px;
+      color: #fff;
+    }
+    
+    div:hover {
+      /* 移动、旋转、缩放 写在一起 */
+      /* 层叠 */
+      /* transform: translateX(800px); */
+      /* 样式层叠： 下面会把上面 层叠掉*/
+      /* transform: rotate(90deg); */
+      /* 简写:一般情况是这样 */
+      /* transform: translateX(800px) rotate(90deg) scale(1.2); */
+      /* 特别：不这样用 */
+      /* 旋转：改变初始化轴向，移动必定会受影响，X Y轴向变了 */
+      /* transform: rotate(90deg) translateX(800px) scale(1.2); */
+    }
+  </style>
+</head>
+
+<body>
+  <div>1</div>
+</body>
+
+</html>

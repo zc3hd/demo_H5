@@ -1,0 +1,106 @@
+/* JS 超过750 后，按750后进行计算，
+但是我们不需要，需要>=720px :1rem=75px
+ */
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px!important;
+  }
+}
+
+body {
+  min-width: 320px;
+  /* max-width: 750px;
+  width: 100%; */
+  width: 10rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  height: 1.173333rem;
+  background-color: #FFC001;
+  position: fixed;
+  min-width: 320px;
+  /* max-width: 750px;
+  width: 100%; */
+  width: 10rem;
+}
+
+header .items {
+  width: .533333rem;
+  height: .933333rem;
+  margin: .12rem .2rem;
+  background: url('../imgs/classify.png') no-repeat;
+  background-size: .533333rem;
+}
+
+header .search {
+  flex: 1;
+  margin: .133333rem .04rem;
+  border-radius: .453333rem;
+  background-color: #fff;
+  line-height: .906667rem;
+  font-size: .32rem;
+  box-sizing: border-box;
+  padding-left: .666667rem;
+  color: #666;
+}
+
+header .login {
+  width: 1.173333rem;
+  height: 1.173333rem;
+  line-height: 1.173333rem;
+  text-align: center;
+  color: #fff;
+  font-size: .32rem;
+}
+
+.banner a {
+  display: block;
+}
+
+.banner a img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.ads {
+  display: flex;
+}
+
+.ads a {
+  flex: 1;
+}
+
+.ads a img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  height: 280px;
+}
+
+nav a {
+  flex: 20%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav a img {
+  width: 82px;
+  margin: 10px 0;
+}
+
+nav a span {
+  font-size: 24px;
+  color: #666;
+}

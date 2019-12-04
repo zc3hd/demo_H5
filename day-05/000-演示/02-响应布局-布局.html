@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* 档位的划分是市场约定的 */
+    /* 档位下版心是市场约定的 */
+    /* 1. 0-768px   XS 手机*/
+    
+    @media screen and (min-width:0px) {
+      .container {
+        width: 100%;
+      }
+    }
+    /* 2. 768-992px SM 平板*/
+    
+    @media screen and (min-width:768px) {
+      .container {
+        width: 750px;
+      }
+    }
+    /* 3. 992-1200 md 小的PC*/
+    
+    @media screen and (min-width:992px) {
+      .container {
+        width: 970px;
+      }
+      .container div {
+        float: left;
+      }
+      .md-1 {
+        width: 10%;
+      }
+      .md-2 {
+        width: 20%;
+      }
+      .md-3 {
+        width: 30%;
+      }
+      .md-4 {
+        width: 40%;
+      }
+      .md-6 {
+        width: 60%;
+      }
+      .md-7 {
+        width: 70%;
+      }
+      .md-8 {
+        width: 80%;
+      }
+      .md-9 {
+        width: 90%;
+      }
+    }
+    /*  1200-无穷大 lg 大桌面显示器*/
+    
+    @media screen and (min-width:1200px) {
+      .container {
+        width: 1170px;
+      }
+      .container div {
+        float: left;
+      }
+      .lg-2 {
+        width: 20%;
+      }
+      .lg-3 {
+        width: 30%;
+      }
+      .lg-4 {
+        width: 40%;
+      }
+      .lg-5 {
+        width: 50%;
+      }
+      .lg-6 {
+        width: 60%;
+      }
+    }
+    
+    .container {
+      height: 500px;
+      background-color: pink;
+      margin: 0 auto;
+    }
+    /* UI 布局  */
+    /* md  ：左侧 30% 右侧70% */
+    /* lg  ：左侧 40% 右侧60% */
+    /* 屏幕的宽度是 1366px  涉及到档位 md  lg  */
+    /* md-7 lg-5 */
+    /* md */
+    
+    .container div {
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+    
+    .left {
+      background-color: #ccc;
+      height: 200px;
+    }
+    
+    .mid {
+      background-color: #222;
+      height: 600px;
+    }
+    
+    .right {
+      background-color: blue;
+      height: 350px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="md-4 lg-2 left">1</div>
+    <div class="md-4 lg-6 mid">2</div>
+    <div class="md-2 lg-2 right">3</div>
+  </div>
+</body>
+
+</html>

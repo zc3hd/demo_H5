@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: #ccc;
+    }
+    
+    body {
+      position: relative;
+    }
+    
+    div {
+      width: 400px;
+      height: 400px;
+      background-color: red;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* 1. 基础班： 对来来说，不够灵活*/
+      /* margin-left: -300px;
+      margin-top: -300px; */
+      /* 2.移动: 不用管宽高，无论父亲怎么变，子元素绝对居中 */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

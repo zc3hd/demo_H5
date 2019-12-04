@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #000;
+      /* 父级：容器 */
+      display: flex;
+      /* 默认值 row */
+      /* flex-direction: row; */
+      /* 侧轴方向上的对齐方式 */
+      /* 主轴，尾部对齐 */
+      justify-content: space-between;
+      /* 从侧轴的头部开始对齐 */
+      /* 重点属性: */
+      /* align-items: center; */
+      /* 拉伸：拉长盒子，顺着侧轴的方向进行拉伸 */
+      /* 前提：项目（子元素）侧轴方向上有 有关大小的设置。设置拉伸不生效 ；若要生效，需把侧轴方向上设置（大小）注释掉*/
+      align-items: stretch;
+    }
+    
+    .son {
+      width: 100px;
+      /* height: 100px; */
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+  </div>
+</body>
+
+</html>

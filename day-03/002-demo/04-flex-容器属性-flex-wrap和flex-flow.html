@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #000;
+      /* 父级：容器 */
+      display: flex;
+      /* 默认值 row */
+      /* flex-direction: row; */
+      /* 从头部 对齐方式*/
+      /* justify-content: flex-start; */
+      /* 是否换行，默认值不换行，项目总宽超过父级，项目就会被压缩 */
+      /* nowrap */
+      /* 换行 */
+      /* flex-wrap: wrap; */
+      /* 上面：从左到右，换行；了解*/
+      flex-flow: row wrap;
+    }
+    
+    .son {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      /* 作用产生近大远小的透视感 */
+      perspective: 500px;
+    }
+    
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #222;
+      margin: 0 auto;
+      transition: all 0.3s;
+    }
+    
+    div:hover {
+      /* 沿着 X 正方向 移动自身宽度 */
+      /* transform: translateX(100%); */
+      /* transform: translateY(100px); */
+      /* 视距：作用产生近大远小的透视感 */
+      /* Z:垂直屏幕向外 */
+      /* transform: translateZ(100px); */
+      /* 设置百分数为什么 不生效? 没有厚度*/
+      /* transform: translateZ(100%); */
+      /* 简写 在x ,y,z轴上移动*/
+      transform: translate3d(100px, 100px, 100px);
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

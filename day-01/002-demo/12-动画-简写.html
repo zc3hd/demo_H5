@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 1.定义 */
+    
+    @keyframes dh {
+      0% {
+        transform: translateX(210px);
+      }
+      100% {
+        transform: translateX(800px);
+      }
+    }
+    
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      /* animation-name: dh;
+      animation-duration: 0.5s; */
+      /* 1.速度曲线：默认值 慢-快-慢 */
+      /* linear：匀速 常用 连续的变化*/
+      /* animation-timing-function: linear; */
+      /* n: 几小步 跳跃完成 不连续的变化 场景：不连续的格子图 */
+      /* animation-timing-function: steps(8); */
+      /* 2.播放次数 */
+      /* iteration 反复 count次数 */
+      /* animation-iteration-count: infinite; */
+      /* 3.动画延迟:等待一段时间去执行 */
+      /* animation-delay: 2s; */
+      /* 4.动画方向 */
+      /* 100-0 */
+      /* animation-direction: reverse; */
+      /* 0-100-0 alternate:轮流的*/
+      /* animation-direction: alternate; */
+      /* 5.控制动画 结束状态 或者等待状态的位置 */
+      /* 结束状态 ：forwards向前，保持向前状态，在100%这个状态不动*/
+      /* animation-fill-mode: forwards; */
+      /* 不设置下面的属性，动画在div初始化位置等，突然跳到0%状态
+      设置：动画在等待的时候，在0%状态等 */
+      /* animation-fill-mode: backwards; */
+      /*  both：两者都 backwards+ forwards*/
+      /* 开始的时候在0%等待，结束时候在100%不动 */
+      /* animation-fill-mode: both; */
+      /* 要求：只要看见简写上每个位置，你能说出是什么意思即可 */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* 面试之前：把每个属性值，单词 什么意思 */
+      /* 特点：需要某个属性，写这个属性值。不需要设置，就不写； */
+      /* forwards:停在 100% */
+      /* animation: dh 0.5s 2s infinite both; */
+    }
+    
+    div:hover {
+      /* 播放状态： 动画暂停 */
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

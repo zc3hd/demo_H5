@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 800px;
+      height: 600px;
+      border: 1px solid #000;
+      /* 父级：容器 */
+      display: flex;
+      /* 思想：不要再想元素是块级元素、行内元素 */
+      /* 子元素：在flex布局里面，只要设置宽高就生效 */
+      /* 主轴：从左到右 */
+      /* 特点：元素会按照主轴的方向进行排列 */
+      /* flex-direction: row; */
+      /* 主轴：从右到左 */
+      /* flex-direction: row-reverse; */
+      /* 从上到下 */
+      /* flex-direction: column; */
+      /* 从下到上 */
+      /* flex-direction: column-reverse; */
+    }
+    
+    .son {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="son">1</span>
+    <span class="son">2</span>
+    <span class="son">3</span>
+    <span class="son">4</span>
+  </div>
+</body>
+
+</html>

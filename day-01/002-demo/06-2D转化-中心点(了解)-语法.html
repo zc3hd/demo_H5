@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      width: 400px;
+      height: 400px;
+      background-color: #222;
+      transition: all 0.3s;
+      /* 中心点位置：改变距离原点的位置 */
+      /* 一般情况下：不动 */
+      /* transform-origin: 100px 100px; */
+      /* 相对于：自身宽高的来说 */
+      /* transform-origin: 100% 100%; */
+      /* 方位名词 */
+      /* transform-origin: left bottom; */
+      /* 用处：根据场景改变中心点位置 */
+    }
+    
+    div:hover {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

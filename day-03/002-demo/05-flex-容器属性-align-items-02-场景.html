@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .p {
+      width: 200px;
+      height: 300px;
+      background-color: #ccc;
+      /* flex布局 */
+      display: flex;
+      /* 默认主轴：从左到右 */
+      /* 设置主轴：从上到下 */
+      flex-direction: column;
+      /* 侧轴上对齐 */
+      align-items: center;
+    }
+    
+    .img {
+      width: 100px;
+      height: 100px;
+      background-color: #222;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p">
+    <span class="img"></span>
+    <span class="info">导航1</span>
+  </div>
+</body>
+
+</html>

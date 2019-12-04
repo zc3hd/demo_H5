@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box_1 {
+      /* 使用定位，默认的百分比100% 宽度就会失效 */
+      position: fixed;
+      /* top: 0; */
+      /* 定位，不设置 top、left 值，按照盒子原来的位置上进行脱标*/
+      /* top: 0;
+      left: 0; */
+      height: 50px;
+      background-color: #ccc;
+    }
+    
+    .box_2 {
+      width: 500px;
+      height: 300px;
+      background-color: #222;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box_1">1asdasdasd</div>
+  <div class="box_2"></div>
+</body>
+
+</html>

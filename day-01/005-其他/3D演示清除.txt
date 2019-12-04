@@ -1,0 +1,6 @@
+$('.expandable-panel').hide()
+$('.menu-item-group').hide()
+$('.expandable-panel').hide()
+$('.app-header').hide()
+
+$('.left-side-panel').hide()

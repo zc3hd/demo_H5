@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 1.定义动画 */
+    
+    @keyframes dongh {
+      /* 序列：有顺序的队列 */
+      /* 百分数：执行时间  常用*/
+      0% {
+        /* 不写。或者 X */
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(800px);
+      }
+      100% {
+        /* 状态的变化，一定是基于上一个状态的变化 */
+        transform: translate(800px, 600px);
+      }
+    }
+    
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: #ccc;
+      animation-name: dongh;
+      animation-duration: 2s;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>

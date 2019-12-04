@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box_1 {
+      /* 加上定位相关，宽度是100%默认值，失效 */
+      /* position: absolute; */
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+    }
+    
+    .box_2 {
+      /* 加上定位相关，宽度是100%默认值，失效 */
+      /* 设置定位，脱标。在原来的位置脱标 */
+      /* 不设置top left 等于 top:0 left:0  这个思想不对 */
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box_1"></div>
+  <div class="box_2"></div>
+</body>
+
+</html>
